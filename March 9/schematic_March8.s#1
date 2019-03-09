@@ -29861,6 +29861,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-149.352" y1="178.054" x2="-149.352" y2="190.246" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="R56" gate="G$1" pin="1"/>
+<wire x1="-143.51" y1="128.27" x2="-146.05" y2="128.27" width="0.1524" layer="91"/>
+<label x="-151.13" y="128.27" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="R62" gate="G$1" pin="1"/>
 <label x="-153.67" y="84.836" size="1.778" layer="95"/>
 <wire x1="-143.51" y1="86.106" x2="-151.13" y2="86.106" width="0.1524" layer="91"/>
@@ -31990,11 +31995,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <pinref part="JP37" gate="A" pin="1"/>
 <wire x1="-505.46" y1="40.64" x2="-502.92" y2="40.64" width="0.1524" layer="91"/>
 <label x="-502.92" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R56" gate="G$1" pin="1"/>
-<wire x1="-143.51" y1="128.27" x2="-146.05" y2="128.27" width="0.1524" layer="91"/>
-<label x="-151.13" y="128.27" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PLS3" class="0">
