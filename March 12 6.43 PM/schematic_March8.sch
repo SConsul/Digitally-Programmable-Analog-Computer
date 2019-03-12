@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -26844,268 +26845,6 @@ Ingenieurbüro ing-rb, mail@ing-rb.de&lt;/p&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="zener">
-<description>&lt;b&gt;ON Semiconductor 1SMAxxBT3G Voltage Regulator Diodes&lt;/b&gt;&lt;br&gt;
-&lt;br&gt;
-Version 1.0&lt;br&gt;
-&amp;copy; 2015 Samuel Lourenço</description>
-<packages>
-<package name="DO214AC">
-<description>&lt;b&gt;DO-214AC (SMA) Surface Mount Diode&lt;/b&gt;</description>
-<smd name="C" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
-<smd name="A" x="2" y="0" dx="2.5" dy="1.7" layer="1"/>
-<rectangle x1="-0.5" y1="-1" x2="0.5" y2="1" layer="35"/>
-<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="-1.3" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="-1.3" x2="2.15" y2="-1.3" width="0.1524" layer="21"/>
-<wire x1="2.15" y1="-1.3" x2="2.15" y2="-1.03" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="1.03" x2="-2.15" y2="1.3" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.1524" layer="21"/>
-<wire x1="2.15" y1="1.3" x2="2.15" y2="1.03" width="0.1524" layer="21"/>
-<wire x1="-2.15" y1="-1.03" x2="-2.15" y2="1.03" width="0.1524" layer="51"/>
-<wire x1="2.15" y1="-1.03" x2="2.15" y2="1.03" width="0.1524" layer="51"/>
-<rectangle x1="-1.65" y1="0.95" x2="-1.15" y2="1.3" layer="21"/>
-<rectangle x1="-1.65" y1="-1.3" x2="-1.15" y2="-0.95" layer="21"/>
-<rectangle x1="-1.65" y1="-0.95" x2="-1.15" y2="0.95" layer="51"/>
-<rectangle x1="-2.6" y1="-0.72" x2="-2.15" y2="0.72" layer="51"/>
-<rectangle x1="2.15" y1="-0.72" x2="2.6" y2="0.72" layer="51"/>
-<text x="-2.1" y="1.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ZD">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1SMA59*BT3G" prefix="D">
-<description>&lt;b&gt;1SMA59xxBT3G Series&lt;/b&gt;&lt;br&gt;
-1.5 Watt Plastic Surface Mount Zener Voltage Regulators&lt;br&gt;
-&lt;br&gt;
-Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"&gt;http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ZD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DO214AC">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="13">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5913BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431138" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5252" constant="no"/>
-</technology>
-<technology name="14">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5914BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1324195" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5253" constant="no"/>
-</technology>
-<technology name="15">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5915BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1459010" constant="no"/>
-<attribute name="OC_NEWARK" value="59M4308" constant="no"/>
-</technology>
-<technology name="16">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5916BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1703016" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9193" constant="no"/>
-</technology>
-<technology name="17">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5917BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431139" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5254" constant="no"/>
-</technology>
-<technology name="18">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5918BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431140" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9194" constant="no"/>
-</technology>
-<technology name="19">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5919BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431141" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9195" constant="no"/>
-</technology>
-<technology name="20">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5920BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431142" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2417" constant="no"/>
-</technology>
-<technology name="21">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5921BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431143" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5255" constant="no"/>
-</technology>
-<technology name="22">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5922BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431144" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9196" constant="no"/>
-</technology>
-<technology name="23">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5923BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431145" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9197" constant="no"/>
-</technology>
-<technology name="24">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5924BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1364652" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2418" constant="no"/>
-</technology>
-<technology name="25">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5925BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431147" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9198" constant="no"/>
-</technology>
-<technology name="26">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5926BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="27">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5927BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1611250" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2419" constant="no"/>
-</technology>
-<technology name="28">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5928BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="2101827" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5256" constant="no"/>
-</technology>
-<technology name="29">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5929BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1459011" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2420" constant="no"/>
-</technology>
-<technology name="30">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5930BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431149" constant="no"/>
-<attribute name="OC_NEWARK" value="59M4319" constant="no"/>
-</technology>
-<technology name="31">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5931BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431150" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5258" constant="no"/>
-</technology>
-<technology name="32">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5932BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5259" constant="no"/>
-</technology>
-<technology name="33">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5933BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="10N9736" constant="no"/>
-</technology>
-<technology name="34">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5934BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431151" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2421" constant="no"/>
-</technology>
-<technology name="35">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5935BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431152" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9199" constant="no"/>
-</technology>
-<technology name="36">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5936BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431153" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9200" constant="no"/>
-</technology>
-<technology name="37">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5937BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1431154" constant="no"/>
-<attribute name="OC_NEWARK" value="71J9201" constant="no"/>
-</technology>
-<technology name="38">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5938BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1651575" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5260" constant="no"/>
-</technology>
-<technology name="39">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5939BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1887114" constant="no"/>
-<attribute name="OC_NEWARK" value="83K8786" constant="no"/>
-</technology>
-<technology name="40">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5940BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1887114" constant="no"/>
-<attribute name="OC_NEWARK" value="09R9816" constant="no"/>
-</technology>
-<technology name="41">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5941BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="42K3075" constant="no"/>
-</technology>
-<technology name="42">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5942BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1705007" constant="no"/>
-<attribute name="OC_NEWARK" value="42K3076" constant="no"/>
-</technology>
-<technology name="43">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5943BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1147840" constant="no"/>
-<attribute name="OC_NEWARK" value="45J2423" constant="no"/>
-</technology>
-<technology name="44">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5944BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-<technology name="45">
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="1SMA5945BT3G" constant="no"/>
-<attribute name="OC_FARNELL" value="1364098" constant="no"/>
-<attribute name="OC_NEWARK" value="26K5261" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -27401,13 +27140,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <part name="C40" library="resistor" deviceset="CPOL-US" device="E2.5-7" value="10uF"/>
 <part name="C34" library="resistor" deviceset="CPOL-US" device="E2.5-7" value="0.1uF"/>
 <part name="C36" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
-<part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="C42" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
-<part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="C44" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
-<part name="GND40" library="supply1" deviceset="GND" device=""/>
 <part name="C45" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
-<part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="C63" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
 <part name="AGND49" library="supply1" deviceset="AGND" device=""/>
 <part name="C64" library="resistor" deviceset="C-US" device="C1206" value="2.2u"/>
@@ -27492,35 +27227,27 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <part name="JP64" library="jumper" deviceset="JP3Q" device=""/>
 <part name="D41" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D1" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND37" library="supply1" deviceset="AGND" device=""/>
 <part name="D2" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R125" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D11" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND39" library="supply1" deviceset="AGND" device=""/>
 <part name="D12" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R126" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D13" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND40" library="supply1" deviceset="AGND" device=""/>
 <part name="D14" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R127" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D15" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND41" library="supply1" deviceset="AGND" device=""/>
 <part name="D16" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R128" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D17" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND42" library="supply1" deviceset="AGND" device=""/>
 <part name="D18" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R129" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D19" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND43" library="supply1" deviceset="AGND" device=""/>
 <part name="D20" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R130" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D21" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND44" library="supply1" deviceset="AGND" device=""/>
 <part name="D22" library="many_diodes" deviceset="1N914BWS" device=""/>
 <part name="R131" library="rcl" deviceset="R-US_" device="R1206"/>
-<part name="D23" library="zener" deviceset="1SMA59*BT3G" device="" technology="13"/>
 <part name="AGND45" library="supply1" deviceset="AGND" device=""/>
 <part name="JP65" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP66" library="pinhead" deviceset="PINHD-1X3" device=""/>
@@ -27530,6 +27257,18 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <part name="JP70" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP71" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP72" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="AGND46" library="supply1" deviceset="AGND" device=""/>
+<part name="AGND47" library="supply1" deviceset="AGND" device=""/>
+<part name="AGND48" library="supply1" deviceset="AGND" device=""/>
+<part name="AGND51" library="supply1" deviceset="AGND" device=""/>
+<part name="D1" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D11" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D13" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D15" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D17" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D19" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D21" library="many_diodes" deviceset="1N914BWS" device=""/>
+<part name="D23" library="many_diodes" deviceset="1N914BWS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28765,29 +28504,17 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <attribute name="NAME" x="-405.384" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-405.384" y="97.409" size="1.778" layer="96"/>
 </instance>
-<instance part="GND23" gate="1" x="-406.4" y="92.456" smashed="yes">
-<attribute name="VALUE" x="-408.94" y="89.916" size="1.778" layer="96"/>
-</instance>
 <instance part="C42" gate="G$1" x="-294.64" y="95.758" smashed="yes">
 <attribute name="NAME" x="-293.624" y="96.393" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-293.624" y="91.567" size="1.778" layer="96"/>
-</instance>
-<instance part="GND37" gate="1" x="-294.64" y="86.614" smashed="yes">
-<attribute name="VALUE" x="-297.18" y="84.074" size="1.778" layer="96"/>
 </instance>
 <instance part="C44" gate="G$1" x="-372.618" y="18.542" smashed="yes">
 <attribute name="NAME" x="-371.602" y="19.177" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-371.602" y="14.351" size="1.778" layer="96"/>
 </instance>
-<instance part="GND40" gate="1" x="-372.618" y="9.906" smashed="yes">
-<attribute name="VALUE" x="-375.158" y="7.366" size="1.778" layer="96"/>
-</instance>
 <instance part="C45" gate="G$1" x="-373.126" y="-32.004" smashed="yes">
 <attribute name="NAME" x="-372.11" y="-31.369" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-372.11" y="-36.195" size="1.778" layer="96"/>
-</instance>
-<instance part="GND41" gate="1" x="-373.126" y="-40.64" smashed="yes">
-<attribute name="VALUE" x="-375.666" y="-43.18" size="1.778" layer="96"/>
 </instance>
 <instance part="C63" gate="G$1" x="-56.642" y="-28.194" smashed="yes">
 <attribute name="NAME" x="-55.626" y="-27.559" size="1.778" layer="95"/>
@@ -29109,18 +28836,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 </instance>
 <instance part="D41" gate="G$1" x="-92.202" y="170.942" smashed="yes" rot="R90">
 <attribute name="NAME" x="-93.7006" y="168.656" size="1.6764" layer="95" ratio="12" rot="R90"/>
-<attribute name="VALUE" x="-89.1286" y="168.91" size="1.6764" layer="96" rot="R90"/>
+<attribute name="VALUE" x="-92.4306" y="168.148" size="1.6764" layer="96" rot="R90"/>
 </instance>
 <instance part="R14" gate="G$1" x="-99.06" y="175.514" smashed="yes">
 <attribute name="NAME" x="-102.87" y="177.0126" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-102.87" y="172.212" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="-85.09" y="170.688" smashed="yes" rot="R90">
-<attribute name="NAME" x="-86.995" y="168.91" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-81.661" y="168.91" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="AGND37" gate="VR1" x="-88.9" y="164.592" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="-86.36" y="159.512" size="1.778" layer="96" rot="MR90"/>
+<instance part="AGND37" gate="VR1" x="-92.202" y="163.83" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-89.662" y="158.75" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="D2" gate="G$1" x="-91.948" y="126.238" smashed="yes" rot="R90">
 <attribute name="NAME" x="-93.4466" y="123.952" size="1.6764" layer="95" ratio="12" rot="R90"/>
@@ -29129,10 +28852,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <instance part="R125" gate="G$1" x="-98.806" y="130.81" smashed="yes">
 <attribute name="NAME" x="-102.616" y="132.3086" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-102.616" y="127.508" size="1.778" layer="96"/>
-</instance>
-<instance part="D11" gate="G$1" x="-84.836" y="125.984" smashed="yes" rot="R90">
-<attribute name="NAME" x="-86.741" y="124.206" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-81.407" y="124.206" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AGND39" gate="VR1" x="-88.646" y="119.888" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-86.106" y="114.808" size="1.778" layer="96" rot="MR90"/>
@@ -29145,10 +28864,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <attribute name="NAME" x="-102.108" y="85.0646" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-102.108" y="80.264" size="1.778" layer="96"/>
 </instance>
-<instance part="D13" gate="G$1" x="-84.328" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="-86.233" y="76.962" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-80.899" y="76.962" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="AGND40" gate="VR1" x="-88.138" y="72.644" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-85.598" y="67.564" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -29159,10 +28874,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <instance part="R127" gate="G$1" x="-100.076" y="38.608" smashed="yes">
 <attribute name="NAME" x="-103.886" y="40.1066" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-103.886" y="35.306" size="1.778" layer="96"/>
-</instance>
-<instance part="D15" gate="G$1" x="-86.106" y="33.782" smashed="yes" rot="R90">
-<attribute name="NAME" x="-88.011" y="32.004" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-82.677" y="32.004" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AGND41" gate="VR1" x="-89.916" y="27.686" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-87.376" y="22.606" size="1.778" layer="96" rot="MR90"/>
@@ -29175,10 +28886,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <attribute name="NAME" x="-104.648" y="-9.4234" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-104.648" y="-14.224" size="1.778" layer="96"/>
 </instance>
-<instance part="D17" gate="G$1" x="-86.868" y="-15.748" smashed="yes" rot="R90">
-<attribute name="NAME" x="-88.773" y="-17.526" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-83.439" y="-17.526" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="AGND42" gate="VR1" x="-90.678" y="-21.844" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-88.138" y="-26.924" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -29189,10 +28896,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <instance part="R129" gate="G$1" x="-101.092" y="-57.912" smashed="yes">
 <attribute name="NAME" x="-104.902" y="-56.4134" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-104.902" y="-61.214" size="1.778" layer="96"/>
-</instance>
-<instance part="D19" gate="G$1" x="-87.122" y="-62.738" smashed="yes" rot="R90">
-<attribute name="NAME" x="-89.027" y="-64.516" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-83.693" y="-64.516" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AGND43" gate="VR1" x="-90.932" y="-68.834" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-88.392" y="-73.914" size="1.778" layer="96" rot="MR90"/>
@@ -29205,10 +28908,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <attribute name="NAME" x="-101.854" y="-95.0214" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-101.854" y="-99.822" size="1.778" layer="96"/>
 </instance>
-<instance part="D21" gate="G$1" x="-84.074" y="-101.346" smashed="yes" rot="R90">
-<attribute name="NAME" x="-85.979" y="-103.124" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-80.645" y="-103.124" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="AGND44" gate="VR1" x="-87.884" y="-107.442" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-85.344" y="-112.522" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -29219,10 +28918,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <instance part="R131" gate="G$1" x="-99.314" y="-129.54" smashed="yes">
 <attribute name="NAME" x="-103.124" y="-128.0414" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-103.124" y="-132.842" size="1.778" layer="96"/>
-</instance>
-<instance part="D23" gate="G$1" x="-85.344" y="-134.366" smashed="yes" rot="R90">
-<attribute name="NAME" x="-87.249" y="-136.144" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-81.915" y="-136.144" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AGND45" gate="VR1" x="-89.154" y="-140.462" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="-86.614" y="-145.542" size="1.778" layer="96" rot="MR90"/>
@@ -29258,6 +28953,50 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <instance part="JP72" gate="A" x="-426.974" y="-11.938" smashed="yes">
 <attribute name="NAME" x="-433.324" y="-6.223" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-433.324" y="-19.558" size="1.778" layer="96"/>
+</instance>
+<instance part="AGND46" gate="VR1" x="-373.126" y="-40.64" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-370.586" y="-45.72" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="AGND47" gate="VR1" x="-372.618" y="9.906" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-370.078" y="4.826" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="AGND48" gate="VR1" x="-294.64" y="86.614" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-292.1" y="81.534" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="AGND51" gate="VR1" x="-406.4" y="92.456" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-403.86" y="87.376" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="D1" gate="G$1" x="-92.202" y="179.07" smashed="yes" rot="R90">
+<attribute name="NAME" x="-93.7006" y="176.784" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-89.1286" y="177.038" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D11" gate="G$1" x="-91.948" y="135.382" smashed="yes" rot="R90">
+<attribute name="NAME" x="-93.4466" y="133.096" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-88.8746" y="133.35" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D13" gate="G$1" x="-91.44" y="87.122" smashed="yes" rot="R90">
+<attribute name="NAME" x="-92.9386" y="84.836" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-88.3666" y="85.09" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D15" gate="G$1" x="-93.218" y="45.212" smashed="yes" rot="R90">
+<attribute name="NAME" x="-94.7166" y="42.926" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-90.1446" y="43.18" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D17" gate="G$1" x="-93.98" y="-4.572" smashed="yes" rot="R90">
+<attribute name="NAME" x="-95.4786" y="-6.858" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-90.9066" y="-6.604" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D19" gate="G$1" x="-94.234" y="-52.324" smashed="yes" rot="R90">
+<attribute name="NAME" x="-95.7326" y="-54.61" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-91.1606" y="-54.356" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D21" gate="G$1" x="-91.186" y="-88.9" smashed="yes" rot="R90">
+<attribute name="NAME" x="-92.6846" y="-91.186" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-88.1126" y="-90.932" size="1.6764" layer="96" rot="R90"/>
+</instance>
+<instance part="D23" gate="G$1" x="-92.456" y="-122.174" smashed="yes" rot="R90">
+<attribute name="NAME" x="-93.9546" y="-124.46" size="1.6764" layer="95" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="-89.3826" y="-124.206" size="1.6764" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -29538,26 +29277,6 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-378.46" y1="103.632" x2="-383.54" y2="103.632" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C36" gate="G$1" pin="2"/>
-<pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="-406.4" y1="96.52" x2="-406.4" y2="94.996" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C42" gate="G$1" pin="2"/>
-<wire x1="-294.64" y1="90.678" x2="-294.64" y2="89.154" width="0.1524" layer="91"/>
-<pinref part="GND37" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C44" gate="G$1" pin="2"/>
-<pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="-372.618" y1="13.462" x2="-372.618" y2="12.446" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C45" gate="G$1" pin="2"/>
-<pinref part="GND41" gate="1" pin="GND"/>
-<wire x1="-373.126" y1="-37.084" x2="-373.126" y2="-38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U7" gate="A" pin="GND"/>
 <wire x1="306.324" y1="86.868" x2="306.324" y2="80.01" width="0.1524" layer="91"/>
 <wire x1="306.324" y1="80.01" x2="304.546" y2="80.01" width="0.1524" layer="91"/>
@@ -29628,6 +29347,48 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <pinref part="L3" gate="G$1" pin="2"/>
 <wire x1="-62.23" y1="132.334" x2="-62.23" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-92.202" y1="181.61" x2="-92.202" y2="183.896" width="0.1524" layer="91"/>
+<label x="-97.79" y="184.404" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-91.948" y1="137.922" x2="-91.694" y2="137.922" width="0.1524" layer="91"/>
+<wire x1="-91.694" y1="137.922" x2="-91.694" y2="140.97" width="0.1524" layer="91"/>
+<label x="-98.044" y="141.224" size="1.778" layer="95"/>
+<pinref part="D11" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="D13" gate="G$1" pin="C"/>
+<wire x1="-91.44" y1="89.662" x2="-91.44" y2="91.948" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="91.948" x2="-91.186" y2="91.948" width="0.1524" layer="91"/>
+<label x="-97.282" y="92.202" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D15" gate="G$1" pin="C"/>
+<wire x1="-93.218" y1="47.752" x2="-93.218" y2="49.53" width="0.1524" layer="91"/>
+<label x="-98.044" y="49.784" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D17" gate="G$1" pin="C"/>
+<wire x1="-93.98" y1="-2.032" x2="-93.98" y2="0" width="0.1524" layer="91"/>
+<label x="-99.822" y="0.254" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D19" gate="G$1" pin="C"/>
+<wire x1="-94.234" y1="-49.784" x2="-94.234" y2="-47.498" width="0.1524" layer="91"/>
+<label x="-99.822" y="-46.99" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D21" gate="G$1" pin="C"/>
+<wire x1="-91.186" y1="-86.36" x2="-91.186" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-96.52" y="-83.566" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D23" gate="G$1" pin="C"/>
+<wire x1="-92.456" y1="-119.634" x2="-92.456" y2="-116.332" width="0.1524" layer="91"/>
+<label x="-97.79" y="-116.078" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -30392,83 +30153,77 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 </segment>
 <segment>
 <pinref part="D41" gate="G$1" pin="A"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="-92.202" y1="168.402" x2="-92.202" y2="168.148" width="0.1524" layer="91"/>
-<wire x1="-92.202" y1="168.148" x2="-88.9" y2="168.148" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="168.148" x2="-85.09" y2="168.148" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="168.148" x2="-88.9" y2="167.132" width="0.1524" layer="91"/>
-<junction x="-88.9" y="168.148"/>
+<wire x1="-92.202" y1="168.402" x2="-92.202" y2="166.37" width="0.1524" layer="91"/>
 <pinref part="AGND37" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="D11" gate="G$1" pin="A"/>
 <wire x1="-91.948" y1="123.698" x2="-91.948" y2="123.444" width="0.1524" layer="91"/>
 <wire x1="-91.948" y1="123.444" x2="-88.646" y2="123.444" width="0.1524" layer="91"/>
-<wire x1="-88.646" y1="123.444" x2="-84.836" y2="123.444" width="0.1524" layer="91"/>
 <wire x1="-88.646" y1="123.444" x2="-88.646" y2="122.428" width="0.1524" layer="91"/>
-<junction x="-88.646" y="123.444"/>
 <pinref part="AGND39" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D12" gate="G$1" pin="A"/>
-<pinref part="D13" gate="G$1" pin="A"/>
 <wire x1="-91.44" y1="76.454" x2="-91.44" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="76.2" x2="-88.138" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-88.138" y1="76.2" x2="-84.328" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-88.138" y1="76.2" x2="-88.138" y2="75.184" width="0.1524" layer="91"/>
-<junction x="-88.138" y="76.2"/>
 <pinref part="AGND40" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D14" gate="G$1" pin="A"/>
-<pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="-93.218" y1="31.496" x2="-93.218" y2="31.242" width="0.1524" layer="91"/>
 <wire x1="-93.218" y1="31.242" x2="-89.916" y2="31.242" width="0.1524" layer="91"/>
-<wire x1="-89.916" y1="31.242" x2="-86.106" y2="31.242" width="0.1524" layer="91"/>
 <wire x1="-89.916" y1="31.242" x2="-89.916" y2="30.226" width="0.1524" layer="91"/>
-<junction x="-89.916" y="31.242"/>
 <pinref part="AGND41" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D16" gate="G$1" pin="A"/>
-<pinref part="D17" gate="G$1" pin="A"/>
 <wire x1="-93.98" y1="-18.034" x2="-93.98" y2="-18.288" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-18.288" x2="-90.678" y2="-18.288" width="0.1524" layer="91"/>
-<wire x1="-90.678" y1="-18.288" x2="-86.868" y2="-18.288" width="0.1524" layer="91"/>
 <wire x1="-90.678" y1="-18.288" x2="-90.678" y2="-19.304" width="0.1524" layer="91"/>
-<junction x="-90.678" y="-18.288"/>
 <pinref part="AGND42" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D18" gate="G$1" pin="A"/>
-<pinref part="D19" gate="G$1" pin="A"/>
 <wire x1="-94.234" y1="-65.024" x2="-94.234" y2="-65.278" width="0.1524" layer="91"/>
 <wire x1="-94.234" y1="-65.278" x2="-90.932" y2="-65.278" width="0.1524" layer="91"/>
-<wire x1="-90.932" y1="-65.278" x2="-87.122" y2="-65.278" width="0.1524" layer="91"/>
 <wire x1="-90.932" y1="-65.278" x2="-90.932" y2="-66.294" width="0.1524" layer="91"/>
-<junction x="-90.932" y="-65.278"/>
 <pinref part="AGND43" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D20" gate="G$1" pin="A"/>
-<pinref part="D21" gate="G$1" pin="A"/>
 <wire x1="-91.186" y1="-103.632" x2="-91.186" y2="-103.886" width="0.1524" layer="91"/>
 <wire x1="-91.186" y1="-103.886" x2="-87.884" y2="-103.886" width="0.1524" layer="91"/>
-<wire x1="-87.884" y1="-103.886" x2="-84.074" y2="-103.886" width="0.1524" layer="91"/>
 <wire x1="-87.884" y1="-103.886" x2="-87.884" y2="-104.902" width="0.1524" layer="91"/>
-<junction x="-87.884" y="-103.886"/>
 <pinref part="AGND44" gate="VR1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="D22" gate="G$1" pin="A"/>
-<pinref part="D23" gate="G$1" pin="A"/>
 <wire x1="-92.456" y1="-136.652" x2="-92.456" y2="-136.906" width="0.1524" layer="91"/>
 <wire x1="-92.456" y1="-136.906" x2="-89.154" y2="-136.906" width="0.1524" layer="91"/>
-<wire x1="-89.154" y1="-136.906" x2="-85.344" y2="-136.906" width="0.1524" layer="91"/>
 <wire x1="-89.154" y1="-136.906" x2="-89.154" y2="-137.922" width="0.1524" layer="91"/>
-<junction x="-89.154" y="-136.906"/>
 <pinref part="AGND45" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="C45" gate="G$1" pin="2"/>
+<wire x1="-373.126" y1="-37.084" x2="-373.126" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="AGND46" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<wire x1="-372.618" y1="13.462" x2="-372.618" y2="12.446" width="0.1524" layer="91"/>
+<pinref part="AGND47" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="C42" gate="G$1" pin="2"/>
+<wire x1="-294.64" y1="90.678" x2="-294.64" y2="89.154" width="0.1524" layer="91"/>
+<pinref part="AGND48" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="-406.4" y1="96.52" x2="-406.4" y2="94.996" width="0.1524" layer="91"/>
+<pinref part="AGND51" gate="VR1" pin="AGND"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -31186,9 +30941,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.258" y="125.73" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP69" gate="A" pin="2"/>
-<wire x1="-551.434" y1="-13.462" x2="-559.308" y2="-13.462" width="0.1524" layer="91"/>
-<label x="-569.468" y="-13.462" size="1.778" layer="95"/>
+<pinref part="JP70" gate="A" pin="2"/>
+<wire x1="-510.794" y1="-13.208" x2="-518.668" y2="-13.208" width="0.1524" layer="91"/>
+<label x="-528.828" y="-13.208" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -31394,9 +31149,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.258" y="113.03" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP72" gate="A" pin="2"/>
-<wire x1="-429.514" y1="-11.938" x2="-437.388" y2="-11.938" width="0.1524" layer="91"/>
-<label x="-447.294" y="-11.684" size="1.778" layer="95"/>
+<pinref part="JP71" gate="A" pin="2"/>
+<wire x1="-470.662" y1="-12.192" x2="-478.536" y2="-12.192" width="0.1524" layer="91"/>
+<label x="-488.696" y="-12.192" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADCINA2" class="0">
@@ -31406,9 +31161,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.258" y="128.27" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP68" gate="A" pin="2"/>
-<wire x1="-429.768" y1="3.302" x2="-437.642" y2="3.302" width="0.1524" layer="91"/>
-<label x="-447.802" y="3.302" size="1.778" layer="95"/>
+<pinref part="JP65" gate="A" pin="2"/>
+<wire x1="-551.434" y1="3.556" x2="-559.308" y2="3.556" width="0.1524" layer="91"/>
+<label x="-569.468" y="3.556" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADCINB2" class="0">
@@ -31430,9 +31185,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.004" y="130.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP67" gate="A" pin="2"/>
-<wire x1="-470.916" y1="4.318" x2="-478.79" y2="4.318" width="0.1524" layer="91"/>
-<label x="-488.95" y="4.318" size="1.778" layer="95"/>
+<pinref part="JP66" gate="A" pin="2"/>
+<wire x1="-510.286" y1="4.572" x2="-518.16" y2="4.572" width="0.1524" layer="91"/>
+<label x="-528.32" y="4.572" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -31510,9 +31265,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.258" y="123.19" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP70" gate="A" pin="2"/>
-<wire x1="-510.794" y1="-13.208" x2="-518.668" y2="-13.208" width="0.1524" layer="91"/>
-<label x="-528.828" y="-13.208" size="1.778" layer="95"/>
+<pinref part="JP69" gate="A" pin="2"/>
+<wire x1="-551.434" y1="-13.462" x2="-559.308" y2="-13.462" width="0.1524" layer="91"/>
+<label x="-569.468" y="-13.462" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADCINB0" class="0">
@@ -31522,9 +31277,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.258" y="115.57" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP71" gate="A" pin="2"/>
-<wire x1="-470.662" y1="-12.192" x2="-478.536" y2="-12.192" width="0.1524" layer="91"/>
-<label x="-488.696" y="-12.192" size="1.778" layer="95"/>
+<pinref part="JP72" gate="A" pin="2"/>
+<wire x1="-429.514" y1="-11.938" x2="-437.388" y2="-11.938" width="0.1524" layer="91"/>
+<label x="-447.294" y="-11.684" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADCINA5" class="0">
@@ -31534,9 +31289,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.004" y="133.35" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP66" gate="A" pin="2"/>
-<wire x1="-510.286" y1="4.572" x2="-518.16" y2="4.572" width="0.1524" layer="91"/>
-<label x="-528.32" y="4.572" size="1.778" layer="95"/>
+<pinref part="JP67" gate="A" pin="2"/>
+<wire x1="-470.916" y1="4.318" x2="-478.79" y2="4.318" width="0.1524" layer="91"/>
+<label x="-488.95" y="4.318" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADCINB4" class="0">
@@ -31582,9 +31337,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-32.004" y="135.89" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP65" gate="A" pin="2"/>
-<wire x1="-551.434" y1="3.556" x2="-559.308" y2="3.556" width="0.1524" layer="91"/>
-<label x="-569.468" y="3.556" size="1.778" layer="95"/>
+<pinref part="JP68" gate="A" pin="2"/>
+<wire x1="-429.768" y1="3.302" x2="-437.642" y2="3.302" width="0.1524" layer="91"/>
+<label x="-447.802" y="3.302" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -32269,14 +32024,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-221.742" y="186.182" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO0"/>
-<wire x1="-378.46" y1="101.092" x2="-383.54" y2="101.092" width="0.1524" layer="91"/>
-<label x="-383.54" y="101.092" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP46" gate="A" pin="1"/>
 <wire x1="-546.1" y1="73.66" x2="-543.56" y2="73.66" width="0.1524" layer="91"/>
 <label x="-543.56" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="NO7"/>
+<wire x1="-317.5" y1="101.092" x2="-312.42" y2="101.092" width="0.1524" layer="91"/>
+<label x="-312.42" y="101.092" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP2" class="0">
@@ -32286,14 +32041,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-222.25" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO1"/>
-<wire x1="-378.46" y1="96.012" x2="-383.54" y2="96.012" width="0.1524" layer="91"/>
-<label x="-386.08" y="96.012" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP47" gate="A" pin="1"/>
 <wire x1="-505.46" y1="73.66" x2="-502.92" y2="73.66" width="0.1524" layer="91"/>
 <label x="-502.92" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="NO6"/>
+<wire x1="-317.5" y1="96.012" x2="-312.42" y2="96.012" width="0.1524" layer="91"/>
+<label x="-312.42" y="96.012" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP3" class="0">
@@ -32303,14 +32058,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-222.504" y="111.252" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO2"/>
-<wire x1="-378.46" y1="90.932" x2="-383.54" y2="90.932" width="0.1524" layer="91"/>
-<label x="-386.08" y="90.932" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP48" gate="A" pin="1"/>
 <wire x1="-464.82" y1="73.66" x2="-462.28" y2="73.66" width="0.1524" layer="91"/>
 <label x="-462.28" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="NO5"/>
+<wire x1="-317.5" y1="90.932" x2="-312.42" y2="90.932" width="0.1524" layer="91"/>
+<label x="-312.42" y="90.932" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP4" class="0">
@@ -32320,14 +32075,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.012" y="72.644" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO3"/>
-<wire x1="-378.46" y1="85.852" x2="-383.54" y2="85.852" width="0.1524" layer="91"/>
-<label x="-387.35" y="85.852" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP49" gate="A" pin="1"/>
 <wire x1="-426.72" y1="73.66" x2="-424.18" y2="73.66" width="0.1524" layer="91"/>
 <label x="-424.18" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="NO4"/>
+<wire x1="-317.5" y1="85.852" x2="-312.42" y2="85.852" width="0.1524" layer="91"/>
+<label x="-312.42" y="85.852" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP5" class="0">
@@ -32337,14 +32092,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-219.71" y="31.75" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO4"/>
-<wire x1="-317.5" y1="85.852" x2="-312.42" y2="85.852" width="0.1524" layer="91"/>
-<label x="-312.42" y="85.852" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP42" gate="A" pin="1"/>
 <wire x1="-546.1" y1="58.42" x2="-543.56" y2="58.42" width="0.1524" layer="91"/>
 <label x="-543.56" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="COM3"/>
+<wire x1="-378.46" y1="83.312" x2="-383.54" y2="83.312" width="0.1524" layer="91"/>
+<label x="-398.78" y="83.312" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP6" class="0">
@@ -32354,14 +32109,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-220.218" y="-5.334" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO5"/>
-<wire x1="-317.5" y1="90.932" x2="-312.42" y2="90.932" width="0.1524" layer="91"/>
-<label x="-312.42" y="90.932" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP43" gate="A" pin="1"/>
 <wire x1="-505.46" y1="58.42" x2="-502.92" y2="58.42" width="0.1524" layer="91"/>
 <label x="-502.92" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="COM2"/>
+<wire x1="-378.46" y1="88.392" x2="-383.54" y2="88.392" width="0.1524" layer="91"/>
+<label x="-398.78" y="88.392" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP7" class="0">
@@ -32371,14 +32126,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-220.472" y="-42.164" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO6"/>
-<wire x1="-317.5" y1="96.012" x2="-312.42" y2="96.012" width="0.1524" layer="91"/>
-<label x="-312.42" y="96.012" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP44" gate="A" pin="1"/>
 <wire x1="-464.82" y1="58.42" x2="-462.28" y2="58.42" width="0.1524" layer="91"/>
 <label x="-462.28" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="COM1"/>
+<wire x1="-378.46" y1="93.472" x2="-383.54" y2="93.472" width="0.1524" layer="91"/>
+<label x="-398.78" y="93.472" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INTINP8" class="0">
@@ -32388,14 +32143,14 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-221.996" y="-78.486" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="NO7"/>
-<wire x1="-317.5" y1="101.092" x2="-312.42" y2="101.092" width="0.1524" layer="91"/>
-<label x="-312.42" y="101.092" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP45" gate="A" pin="1"/>
 <wire x1="-426.72" y1="58.42" x2="-424.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="-424.18" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U9" gate="A" pin="COM0"/>
+<wire x1="-378.46" y1="98.552" x2="-383.54" y2="98.552" width="0.1524" layer="91"/>
+<label x="-398.78" y="98.552" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH1" class="0">
@@ -32405,9 +32160,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.012" y="181.102" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM0"/>
-<wire x1="-378.46" y1="98.552" x2="-383.54" y2="98.552" width="0.1524" layer="91"/>
-<label x="-398.78" y="98.552" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="COM7"/>
+<wire x1="-317.5" y1="98.552" x2="-312.42" y2="98.552" width="0.1524" layer="91"/>
+<label x="-312.42" y="98.552" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH2" class="0">
@@ -32417,9 +32172,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.52" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM1"/>
-<wire x1="-378.46" y1="93.472" x2="-383.54" y2="93.472" width="0.1524" layer="91"/>
-<label x="-398.78" y="93.472" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="COM6"/>
+<wire x1="-317.5" y1="93.472" x2="-312.42" y2="93.472" width="0.1524" layer="91"/>
+<label x="-312.42" y="93.472" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH3" class="0">
@@ -32429,9 +32184,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.774" y="106.172" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM2"/>
-<wire x1="-378.46" y1="88.392" x2="-383.54" y2="88.392" width="0.1524" layer="91"/>
-<label x="-398.78" y="88.392" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="COM5"/>
+<wire x1="-317.5" y1="88.392" x2="-312.42" y2="88.392" width="0.1524" layer="91"/>
+<label x="-312.42" y="88.392" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH4" class="0">
@@ -32441,9 +32196,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-224.282" y="67.564" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM3"/>
-<wire x1="-378.46" y1="83.312" x2="-383.54" y2="83.312" width="0.1524" layer="91"/>
-<label x="-398.78" y="83.312" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="COM4"/>
+<wire x1="-317.5" y1="83.312" x2="-312.42" y2="83.312" width="0.1524" layer="91"/>
+<label x="-312.42" y="83.312" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH5" class="0">
@@ -32453,9 +32208,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-222.25" y="26.67" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM4"/>
-<wire x1="-317.5" y1="83.312" x2="-312.42" y2="83.312" width="0.1524" layer="91"/>
-<label x="-312.42" y="83.312" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="NO3"/>
+<wire x1="-378.46" y1="85.852" x2="-383.54" y2="85.852" width="0.1524" layer="91"/>
+<label x="-387.35" y="85.852" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH6" class="0">
@@ -32465,9 +32220,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-222.758" y="-7.874" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM5"/>
-<wire x1="-317.5" y1="88.392" x2="-312.42" y2="88.392" width="0.1524" layer="91"/>
-<label x="-312.42" y="88.392" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="NO2"/>
+<wire x1="-378.46" y1="90.932" x2="-383.54" y2="90.932" width="0.1524" layer="91"/>
+<label x="-386.08" y="90.932" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH7" class="0">
@@ -32477,9 +32232,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.012" y="-44.704" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM6"/>
-<wire x1="-317.5" y1="93.472" x2="-312.42" y2="93.472" width="0.1524" layer="91"/>
-<label x="-312.42" y="93.472" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="NO1"/>
+<wire x1="-378.46" y1="96.012" x2="-383.54" y2="96.012" width="0.1524" layer="91"/>
+<label x="-386.08" y="96.012" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWITCH8" class="0">
@@ -32489,9 +32244,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-223.266" y="-81.026" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U9" gate="A" pin="COM7"/>
-<wire x1="-317.5" y1="98.552" x2="-312.42" y2="98.552" width="0.1524" layer="91"/>
-<label x="-312.42" y="98.552" size="1.778" layer="95"/>
+<pinref part="U9" gate="A" pin="NO0"/>
+<wire x1="-378.46" y1="101.092" x2="-383.54" y2="101.092" width="0.1524" layer="91"/>
+<label x="-383.54" y="101.092" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$101" class="0">
@@ -32640,9 +32395,9 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <label x="-366.776" y="-41.91" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="GPIO8/EPWM5A/ADCSOCAO"/>
-<wire x1="163.576" y1="74.93" x2="166.37" y2="74.93" width="0.1524" layer="91"/>
-<label x="166.37" y="74.93" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="GPIO2/EPWM2A"/>
+<wire x1="163.576" y1="135.89" x2="167.894" y2="135.89" width="0.1524" layer="91"/>
+<label x="168.656" y="136.144" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -33281,7 +33036,8 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <net name="N$133" class="0">
 <segment>
 <pinref part="JP29" gate="A" pin="2"/>
-<wire x1="274.828" y1="39.624" x2="243.84" y2="39.624" width="0.1524" layer="91"/>
+<wire x1="275.082" y1="39.624" x2="243.84" y2="39.624" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="!PRE"/>
 </segment>
 </net>
 <net name="N$131" class="0">
@@ -33575,13 +33331,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-93.98" y1="175.514" x2="-92.202" y2="175.514" width="0.1524" layer="91"/>
 <label x="-85.852" y="176.53" size="1.778" layer="95"/>
 <pinref part="D41" gate="G$1" pin="C"/>
-<wire x1="-92.202" y1="175.514" x2="-85.09" y2="175.514" width="0.1524" layer="91"/>
-<wire x1="-85.09" y1="175.514" x2="-80.772" y2="175.514" width="0.1524" layer="91"/>
+<wire x1="-92.202" y1="175.514" x2="-80.772" y2="175.514" width="0.1524" layer="91"/>
 <wire x1="-92.202" y1="173.482" x2="-92.202" y2="175.514" width="0.1524" layer="91"/>
 <junction x="-92.202" y="175.514"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="-85.09" y1="173.228" x2="-85.09" y2="175.514" width="0.1524" layer="91"/>
-<junction x="-85.09" y="175.514"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-92.202" y1="175.514" x2="-92.202" y2="176.53" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-8.128" y1="-31.496" x2="-8.128" y2="-40.64" width="0.1524" layer="91"/>
@@ -33598,13 +33352,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-93.726" y1="130.81" x2="-91.948" y2="130.81" width="0.1524" layer="91"/>
 <label x="-79.502" y="131.064" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="-91.948" y1="130.81" x2="-84.836" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="-84.836" y1="130.81" x2="-80.518" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="-91.948" y1="130.81" x2="-80.518" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="-91.948" y1="128.778" x2="-91.948" y2="130.81" width="0.1524" layer="91"/>
 <junction x="-91.948" y="130.81"/>
-<pinref part="D11" gate="G$1" pin="C"/>
-<wire x1="-84.836" y1="128.524" x2="-84.836" y2="130.81" width="0.1524" layer="91"/>
-<junction x="-84.836" y="130.81"/>
+<wire x1="-91.948" y1="130.81" x2="-91.948" y2="132.842" width="0.1524" layer="91"/>
+<pinref part="D11" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <wire x1="21.844" y1="-31.496" x2="21.844" y2="-50.038" width="0.1524" layer="91"/>
@@ -33620,13 +33372,12 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-93.218" y1="83.566" x2="-91.44" y2="83.566" width="0.1524" layer="91"/>
 <label x="-78.994" y="83.82" size="1.778" layer="95"/>
 <pinref part="D12" gate="G$1" pin="C"/>
-<wire x1="-91.44" y1="83.566" x2="-84.328" y2="83.566" width="0.1524" layer="91"/>
-<wire x1="-84.328" y1="83.566" x2="-80.01" y2="83.566" width="0.1524" layer="91"/>
+<wire x1="-91.186" y1="83.566" x2="-80.01" y2="83.566" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="81.534" x2="-91.44" y2="83.566" width="0.1524" layer="91"/>
 <junction x="-91.44" y="83.566"/>
-<pinref part="D13" gate="G$1" pin="C"/>
-<wire x1="-84.328" y1="81.28" x2="-84.328" y2="83.566" width="0.1524" layer="91"/>
-<junction x="-84.328" y="83.566"/>
+<pinref part="D13" gate="G$1" pin="A"/>
+<wire x1="-91.186" y1="83.566" x2="-91.44" y2="83.566" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="83.566" x2="-91.44" y2="84.582" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="D" pin="+IN"/>
@@ -33642,13 +33393,12 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-94.996" y1="38.608" x2="-93.218" y2="38.608" width="0.1524" layer="91"/>
 <label x="-80.772" y="38.862" size="1.778" layer="95"/>
 <pinref part="D14" gate="G$1" pin="C"/>
-<wire x1="-93.218" y1="38.608" x2="-86.106" y2="38.608" width="0.1524" layer="91"/>
-<wire x1="-86.106" y1="38.608" x2="-81.788" y2="38.608" width="0.1524" layer="91"/>
+<wire x1="-92.964" y1="38.608" x2="-81.788" y2="38.608" width="0.1524" layer="91"/>
 <wire x1="-93.218" y1="36.576" x2="-93.218" y2="38.608" width="0.1524" layer="91"/>
 <junction x="-93.218" y="38.608"/>
-<pinref part="D15" gate="G$1" pin="C"/>
-<wire x1="-86.106" y1="36.322" x2="-86.106" y2="38.608" width="0.1524" layer="91"/>
-<junction x="-86.106" y="38.608"/>
+<wire x1="-92.964" y1="38.608" x2="-93.218" y2="38.608" width="0.1524" layer="91"/>
+<wire x1="-93.218" y1="38.608" x2="-93.218" y2="42.672" width="0.1524" layer="91"/>
+<pinref part="D15" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="D" pin="+IN"/>
@@ -33664,13 +33414,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-95.758" y1="-10.922" x2="-93.98" y2="-10.922" width="0.1524" layer="91"/>
 <label x="-81.534" y="-10.668" size="1.778" layer="95"/>
 <pinref part="D16" gate="G$1" pin="C"/>
-<wire x1="-93.98" y1="-10.922" x2="-86.868" y2="-10.922" width="0.1524" layer="91"/>
-<wire x1="-86.868" y1="-10.922" x2="-82.55" y2="-10.922" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-10.922" x2="-82.55" y2="-10.922" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-12.954" x2="-93.98" y2="-10.922" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-10.922"/>
-<pinref part="D17" gate="G$1" pin="C"/>
-<wire x1="-86.868" y1="-13.208" x2="-86.868" y2="-10.922" width="0.1524" layer="91"/>
-<junction x="-86.868" y="-10.922"/>
+<wire x1="-93.98" y1="-10.922" x2="-93.98" y2="-7.112" width="0.1524" layer="91"/>
+<pinref part="D17" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="D" pin="+IN"/>
@@ -33686,13 +33434,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-96.012" y1="-57.912" x2="-94.234" y2="-57.912" width="0.1524" layer="91"/>
 <label x="-81.788" y="-57.658" size="1.778" layer="95"/>
 <pinref part="D18" gate="G$1" pin="C"/>
-<wire x1="-94.234" y1="-57.912" x2="-87.122" y2="-57.912" width="0.1524" layer="91"/>
-<wire x1="-87.122" y1="-57.912" x2="-82.804" y2="-57.912" width="0.1524" layer="91"/>
+<wire x1="-94.234" y1="-57.912" x2="-82.804" y2="-57.912" width="0.1524" layer="91"/>
 <wire x1="-94.234" y1="-59.944" x2="-94.234" y2="-57.912" width="0.1524" layer="91"/>
 <junction x="-94.234" y="-57.912"/>
-<pinref part="D19" gate="G$1" pin="C"/>
-<wire x1="-87.122" y1="-60.198" x2="-87.122" y2="-57.912" width="0.1524" layer="91"/>
-<junction x="-87.122" y="-57.912"/>
+<wire x1="-94.234" y1="-57.912" x2="-94.234" y2="-54.864" width="0.1524" layer="91"/>
+<pinref part="D19" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="D" pin="+IN"/>
@@ -33708,13 +33454,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-92.964" y1="-96.52" x2="-91.186" y2="-96.52" width="0.1524" layer="91"/>
 <label x="-78.74" y="-96.266" size="1.778" layer="95"/>
 <pinref part="D20" gate="G$1" pin="C"/>
-<wire x1="-91.186" y1="-96.52" x2="-84.074" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="-84.074" y1="-96.52" x2="-79.756" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-91.186" y1="-96.52" x2="-79.756" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="-91.186" y1="-98.552" x2="-91.186" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="-91.186" y="-96.52"/>
-<pinref part="D21" gate="G$1" pin="C"/>
-<wire x1="-84.074" y1="-98.806" x2="-84.074" y2="-96.52" width="0.1524" layer="91"/>
-<junction x="-84.074" y="-96.52"/>
+<wire x1="-91.186" y1="-96.52" x2="-91.186" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="D21" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="D" pin="+IN"/>
@@ -33730,13 +33474,11 @@ Source: &lt;a href="http://www.onsemi.com/pub_link/Collateral/1SMA5913BT3-D.PDF"
 <wire x1="-94.234" y1="-129.54" x2="-92.456" y2="-129.54" width="0.1524" layer="91"/>
 <label x="-80.01" y="-129.286" size="1.778" layer="95"/>
 <pinref part="D22" gate="G$1" pin="C"/>
-<wire x1="-92.456" y1="-129.54" x2="-85.344" y2="-129.54" width="0.1524" layer="91"/>
-<wire x1="-85.344" y1="-129.54" x2="-81.026" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="-92.456" y1="-129.54" x2="-81.026" y2="-129.54" width="0.1524" layer="91"/>
 <wire x1="-92.456" y1="-131.572" x2="-92.456" y2="-129.54" width="0.1524" layer="91"/>
 <junction x="-92.456" y="-129.54"/>
-<pinref part="D23" gate="G$1" pin="C"/>
-<wire x1="-85.344" y1="-131.826" x2="-85.344" y2="-129.54" width="0.1524" layer="91"/>
-<junction x="-85.344" y="-129.54"/>
+<wire x1="-92.456" y1="-129.54" x2="-92.456" y2="-124.714" width="0.1524" layer="91"/>
+<pinref part="D23" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="IC10" gate="D" pin="+IN"/>
