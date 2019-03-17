@@ -31324,7 +31324,6 @@ grid 5.08 mm</description>
 <part name="DAC-MODE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="R132" library="resistor" deviceset="R-US_" device="R1206" value="0"/>
 <part name="DAC-DVDD" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="DAC-PB" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="R133" library="resistor" deviceset="R-US_" device="R1206" value="0"/>
 <part name="R134" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
@@ -31333,6 +31332,11 @@ grid 5.08 mm</description>
 <part name="TXLED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
 <part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
 <part name="LED6" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML1206" package3d_urn="urn:adsk.eagle:package:15829/1"/>
+<part name="C46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1uF"/>
+<part name="AGND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="AGND" device=""/>
+<part name="C47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1uF"/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R135" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -32774,8 +32778,8 @@ grid 5.08 mm</description>
 <attribute name="NAME" x="221.996" y="198.628" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="228.981" y="198.628" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND54" gate="1" x="357.886" y="39.624" smashed="yes" rot="R270">
-<attribute name="VALUE" x="355.346" y="42.164" size="1.778" layer="96" rot="R270"/>
+<instance part="GND54" gate="1" x="372.364" y="39.624" smashed="yes" rot="R270">
+<attribute name="VALUE" x="369.824" y="42.164" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="+1.5V1" gate="G$1" x="349.758" y="-58.42" smashed="yes">
 <attribute name="NAME" x="343.408" y="-55.245" size="1.778" layer="95"/>
@@ -33018,9 +33022,9 @@ grid 5.08 mm</description>
 <attribute name="NAME" x="-92.9386" y="-131.572" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-90.1446" y="-131.572" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="DAC-MODE" gate="A" x="369.062" y="42.164" smashed="yes">
-<attribute name="NAME" x="362.712" y="47.879" size="1.778" layer="95"/>
-<attribute name="VALUE" x="362.712" y="34.544" size="1.778" layer="96"/>
+<instance part="DAC-MODE" gate="A" x="382.016" y="42.164" smashed="yes">
+<attribute name="NAME" x="375.666" y="47.879" size="1.778" layer="95"/>
+<attribute name="VALUE" x="375.666" y="34.544" size="1.778" layer="96"/>
 </instance>
 <instance part="R132" gate="G$1" x="203.708" y="91.186" smashed="yes" rot="R270">
 <attribute name="NAME" x="205.2066" y="94.996" size="1.778" layer="95" rot="R270"/>
@@ -33029,10 +33033,6 @@ grid 5.08 mm</description>
 <instance part="DAC-DVDD" gate="A" x="354.584" y="53.34" smashed="yes">
 <attribute name="NAME" x="348.234" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="348.234" y="45.72" size="1.778" layer="96"/>
-</instance>
-<instance part="DAC-PB" gate="A" x="241.3" y="39.624" smashed="yes" rot="R180">
-<attribute name="NAME" x="247.65" y="33.909" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="247.65" y="47.244" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R133" gate="G$1" x="-62.23" y="127.254" smashed="yes" rot="R270">
 <attribute name="NAME" x="-60.7314" y="131.064" size="1.778" layer="95" rot="R270"/>
@@ -33065,6 +33065,24 @@ grid 5.08 mm</description>
 <instance part="LED6" gate="G$1" x="340.614" y="-40.386" smashed="yes" rot="R180">
 <attribute name="NAME" x="337.058" y="-35.814" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="334.899" y="-35.814" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C46" gate="G$1" x="346.964" y="26.924" smashed="yes" rot="R90">
+<attribute name="NAME" x="346.329" y="28.956" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="354.965" y="29.21" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="AGND52" gate="VR1" x="358.14" y="26.924" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="363.22" y="29.464" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="C47" gate="G$1" x="348.234" y="39.624" smashed="yes" rot="R90">
+<attribute name="NAME" x="347.599" y="41.656" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="356.235" y="41.91" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND21" gate="1" x="358.394" y="39.624" smashed="yes" rot="R90">
+<attribute name="VALUE" x="360.934" y="37.084" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R135" gate="G$1" x="-44.196" y="-68.834" smashed="yes">
+<attribute name="NAME" x="-48.006" y="-67.3354" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-48.006" y="-72.136" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -33275,9 +33293,13 @@ grid 5.08 mm</description>
 <label x="-34.036" y="-54.356" size="2.54" layer="95"/>
 <pinref part="R134" gate="G$1" pin="2"/>
 <wire x1="-37.084" y1="-54.356" x2="-34.036" y2="-54.356" width="0.1524" layer="91"/>
-<wire x1="-37.084" y1="-54.356" x2="-37.084" y2="-61.976" width="0.1524" layer="91"/>
+<wire x1="-37.084" y1="-54.356" x2="-37.084" y2="-61.722" width="0.1524" layer="91"/>
+<wire x1="-37.084" y1="-61.722" x2="-37.084" y2="-61.976" width="0.1524" layer="91"/>
 <wire x1="-37.084" y1="-61.976" x2="-39.116" y2="-61.976" width="0.1524" layer="91"/>
 <junction x="-37.084" y="-54.356"/>
+<pinref part="R135" gate="G$1" pin="2"/>
+<wire x1="-37.084" y1="-61.976" x2="-37.084" y2="-68.834" width="0.1524" layer="91"/>
+<wire x1="-37.084" y1="-68.834" x2="-39.116" y2="-68.834" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="DGND"/>
@@ -33358,8 +33380,13 @@ grid 5.08 mm</description>
 </segment>
 <segment>
 <pinref part="DAC-MODE" gate="A" pin="3"/>
-<wire x1="366.522" y1="39.624" x2="360.426" y2="39.624" width="0.1524" layer="91"/>
+<wire x1="379.476" y1="39.624" x2="374.904" y2="39.624" width="0.1524" layer="91"/>
 <pinref part="GND54" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C47" gate="G$1" pin="2"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="353.314" y1="39.624" x2="355.854" y2="39.624" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -33387,6 +33414,7 @@ grid 5.08 mm</description>
 <pinref part="DAC" gate="A" pin="REF"/>
 <label x="334.264" y="39.878" size="1.778" layer="95"/>
 <wire x1="330.962" y1="39.624" x2="345.694" y2="39.624" width="0.1524" layer="91"/>
+<pinref part="C47" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC-28069" gate="A" pin="VDD3VFL"/>
@@ -33464,19 +33492,9 @@ grid 5.08 mm</description>
 <pinref part="D22" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="DAC-MODE" gate="A" pin="1"/>
-<wire x1="366.522" y1="44.704" x2="360.426" y2="44.704" width="0.1524" layer="91"/>
-<label x="354.838" y="44.958" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="DAC-DVDD" gate="A" pin="3"/>
 <wire x1="352.044" y1="50.8" x2="345.948" y2="50.8" width="0.1524" layer="91"/>
 <label x="341.376" y="51.054" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DAC-PB" gate="A" pin="1"/>
-<wire x1="248.666" y1="37.084" x2="243.84" y2="37.084" width="0.1524" layer="91"/>
-<label x="247.142" y="37.338" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -33990,6 +34008,10 @@ grid 5.08 mm</description>
 <wire x1="-50.8" y1="-54.356" x2="-50.8" y2="-61.976" width="0.1524" layer="91"/>
 <pinref part="R134" gate="G$1" pin="1"/>
 <wire x1="-50.8" y1="-61.976" x2="-49.276" y2="-61.976" width="0.1524" layer="91"/>
+<pinref part="R135" gate="G$1" pin="1"/>
+<wire x1="-50.8" y1="-61.976" x2="-50.8" y2="-68.834" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-68.834" x2="-49.276" y2="-68.834" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-61.976"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="AGND"/>
@@ -34323,6 +34345,11 @@ grid 5.08 mm</description>
 <wire x1="249.682" y1="-8.636" x2="261.874" y2="-8.636" width="0.1524" layer="91"/>
 <wire x1="261.874" y1="-8.636" x2="261.874" y2="-9.144" width="0.1524" layer="91"/>
 <label x="254" y="-8.636" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C46" gate="G$1" pin="2"/>
+<wire x1="352.044" y1="26.924" x2="355.6" y2="26.924" width="0.1524" layer="91"/>
+<pinref part="AGND52" gate="VR1" pin="AGND"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -34738,8 +34765,9 @@ grid 5.08 mm</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="DAC" gate="A" pin="AVDD"/>
-<wire x1="330.962" y1="26.924" x2="334.772" y2="26.924" width="0.1524" layer="91"/>
 <label x="334.772" y="27.178" size="1.778" layer="95"/>
+<pinref part="C46" gate="G$1" pin="1"/>
+<wire x1="330.962" y1="26.924" x2="344.424" y2="26.924" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="P" pin="V+"/>
@@ -34925,11 +34953,6 @@ grid 5.08 mm</description>
 <pinref part="DAC-DVDD" gate="A" pin="1"/>
 <wire x1="352.044" y1="55.88" x2="345.948" y2="55.88" width="0.1524" layer="91"/>
 <label x="341.63" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DAC-PB" gate="A" pin="3"/>
-<wire x1="243.84" y1="42.164" x2="248.666" y2="42.164" width="0.1524" layer="91"/>
-<label x="247.142" y="42.672" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -37113,7 +37136,7 @@ grid 5.08 mm</description>
 <net name="?????" class="0">
 <segment>
 <pinref part="DAC" gate="A" pin="MODE"/>
-<wire x1="330.962" y1="42.164" x2="366.522" y2="42.164" width="0.1524" layer="91"/>
+<wire x1="330.962" y1="42.164" x2="379.476" y2="42.164" width="0.1524" layer="91"/>
 <label x="347.472" y="42.418" size="1.778" layer="95"/>
 <pinref part="DAC-MODE" gate="A" pin="2"/>
 </segment>
@@ -37549,13 +37572,15 @@ grid 5.08 mm</description>
 <pinref part="DAC-DVDD" gate="A" pin="2"/>
 <label x="331.978" y="51.308" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="PREBAR" class="0">
+<segment>
+<pinref part="DAC-MODE" gate="A" pin="1"/>
+<wire x1="379.476" y1="44.704" x2="372.364" y2="44.704" width="0.1524" layer="91"/>
+<label x="366.522" y="44.958" size="1.778" layer="95"/>
+</segment>
 <segment>
 <wire x1="275.082" y1="39.624" x2="243.84" y2="39.624" width="0.1524" layer="91"/>
 <pinref part="DAC" gate="A" pin="!PRE"/>
 <label x="246.888" y="40.132" size="1.778" layer="95"/>
-<pinref part="DAC-PB" gate="A" pin="2"/>
 </segment>
 </net>
 </nets>

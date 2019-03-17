@@ -161,12 +161,12 @@
 </layers>
 <board>
 <plain>
-<text x="125.8062" y="35.433" size="5.08" layer="25" font="vector">DPAC v2.0</text>
+<text x="124.4346" y="35.4838" size="5.08" layer="25" font="vector">DPAC v2.0</text>
 <text x="59.309" y="50.1396" size="2.032" layer="25" font="vector">BY PARTHASARATHI KHIRWADKAR, PRANIL JOSHI, SARTHAK CONSUL</text>
 <text x="7.747" y="47.7012" size="1.4224" layer="25" font="vector">PROF. MUKUL CHANDORKAR
 EE344: ELETRONICS DESIGN LAB
 SPRING, 2019, IIT BOMBAY</text>
-<text x="125.6284" y="33.0962" size="1.27" layer="25" font="vector">Digitally Programable Analog Computer</text>
+<text x="124.1806" y="33.0454" size="1.27" layer="25" font="vector">Digitally Programable Analog Computer</text>
 <hole x="169.545" y="50.0888" drill="3.5"/>
 <hole x="169.545" y="-98.6536" drill="3.5"/>
 <hole x="4.6228" y="-98.5774" drill="3.5"/>
